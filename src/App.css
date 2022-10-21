@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap');
+
+
+
+body {
+  font-family: 'Nunito';
+  overflow-x: hidden;
+}
+
 .overlay {
   position: fixed;
   top: 0;
@@ -47,6 +56,12 @@
   background-color: transparent;
 }
 
+/* navbar */
+
+.navbar {
+  /* padding: 0 150px; */
+}
+
 /* NAVBAR BUTTON */
 
 .navbar button {
@@ -65,7 +80,35 @@
 
 }
 
+.about-us {
+  background: #142D71;
+  width: 98px;
+  height: 42px;
+  color: #fff;
+ 
+}
 
+/* introsection */
+
+.introsection-left {
+  padding-top: 174px;
+  padding-left: 150px;
+}
+
+.introsection-left h1 {
+  font-size: 44px !important;
+}
+
+.introsection-right img {
+  width: 100%;
+  border-bottom-left-radius: 510px;
+
+}
+
+.button-groups button {
+  border:none;
+  margin-right: 15px;
+}
 
 
 
@@ -82,6 +125,15 @@
     display: flex;
     border: none;
     background-color: transparent;
-    font-size: 28px;
+    font-size: 24px;
+  }
+
+  .introsection-left {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 } 
