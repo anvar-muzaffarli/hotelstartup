@@ -111,6 +111,33 @@ body {
 }
 
 
+/* Card section */
+
+
+.card {
+  min-width: 300px;
+  width: 25%;
+  padding: 30px;
+  margin: 0 auto;
+  /* margin-right: 10px; */
+}
+
+.card img {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+
+/* Carousel section */
+
+.swiper {
+  max-width: 95%;
+}
+
+.swiper-wrapper {
+  padding: 48px;
+}
 
 
 
@@ -118,8 +145,7 @@ body {
 
 
 
-
- @media(max-width:768px) {
+ @media(max-width:991px) {
 
   .navbar button {
     display: flex;
@@ -135,5 +161,9 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+  }
+
+  .swiper-wrapper {
+    padding-left: 0;
   }
 } 
