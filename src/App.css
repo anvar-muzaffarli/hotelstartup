@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
-}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.7);
+  height: 100vh;
+  width: 100%;
+  z-index: 9999;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+
+  transform: scale(0);
+  transition: .8s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.overlay-active {
+  transform: scale(1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.overlay h1 {
+  color: #fff;
 }
+
+.overlay form {
+  width: 50%;
+}
+
+.overlay input {
+  margin-top: 10px;
+  width: 100%;
+  background-color: transparent;
+}
+
+.overlay textarea {
+  /* width: 100%; */
+  background-color: transparent;
+}
+
+.overlay textarea:focus {
+  background-color: transparent;
+}
+
+.overlay input:focus {
+  background-color: transparent;
+}
+
+/* NAVBAR BUTTON */
+
+.navbar button {
+  display: none;
+}
+ /* .collapsed {
+  display: none;
+} */
+
+.navbar .buybtn {
+  background: #142D71;
+  width: 98px;
+  height: 42px;
+  color: #fff;
+  display: block;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ @media(max-width:768px) {
+
+  .navbar button {
+    display: flex;
+    border: none;
+    background-color: transparent;
+    font-size: 28px;
+  }
+} 
